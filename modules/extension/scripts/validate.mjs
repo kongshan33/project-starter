@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { access, readFile } from 'node:fs/promises';
+const root = new URL('../', import.meta.url);
+const manifest = JSON.parse(await readFile(new URL('manifest.json', root), 'utf8'));
+assert.equal(manifest.manifest_version, 3);
+assert.equal(typeof manifest.name, 'string');
+await access(new URL(manifest.action.default_popup, root));
+await access(new URL('popup.js', root));
+await access(new URL('popup.css', root));
+console.log('Minimal MV3 extension files validated; real browser acceptance is separate.');

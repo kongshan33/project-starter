@@ -1,0 +1,10 @@
+{
+  "name": "@starter/api", "version": "0.1.0", "private": true,
+  "scripts": {
+    "dev": "uv run --locked uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "build": "uv run --locked python -m compileall -q app",
+    "lint": "uv run --locked ruff check app tests && uv run --locked ruff format --check app tests",
+    "typecheck": "uv run --locked mypy app",
+    "test": "uv run --locked pytest -q"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@starter/config/typescript",
+  "compilerOptions": {
+    "jsx": "react-jsx", "incremental": true,
+    "plugins": [{ "name": "next" }], "paths": { "@/*": ["./*"] }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next-build/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

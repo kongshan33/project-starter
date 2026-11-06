@@ -1,0 +1,1 @@
+{ "extends": "@starter/config/typescript", "compilerOptions": { "jsx": "react-jsx" }, "include": ["src"] }

@@ -1,0 +1,7 @@
+{
+  "manifest_version": 3,
+  "name": "Project Starter",
+  "version": "0.1.0",
+  "description": "An optional, permission-free extension starting point.",
+  "action": { "default_popup": "popup.html" }
+}

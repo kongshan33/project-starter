@@ -1,0 +1,8 @@
+{
+  "name": "project-starter",
+  "packageScope": "starter",
+  "title": "Project Starter",
+  "description": "A reusable workspace for your next product.",
+  "initialized": false,
+  "modules": { "extension": false }
+}

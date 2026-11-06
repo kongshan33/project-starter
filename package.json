@@ -1,0 +1,30 @@
+{
+  "name": "project-starter",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.19.0",
+  "engines": {
+    "node": ">=22.15.0 <23"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "node --test scripts/tests/*.test.mjs && turbo run test",
+    "test:browser": "playwright test",
+    "check:template": "node scripts/check-template.mjs",
+    "check": "pnpm check:template && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "init:project": "node scripts/init-project.mjs",
+    "skills:sync": "node scripts/sync-skills.mjs",
+    "handoff:check": "node scripts/check-handoff.mjs",
+    "setup:api": "uv sync --project apps/api --locked"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "turbo": "2.11.10",
+    "typescript": "5.9.3"
+  }
+}
