@@ -1,6 +1,6 @@
 # 模板提炼与验收
 
-日期：2026-11-06。当前状态：本地验收完成，远端发布单独记录。
+日期：2026-11-06。当前状态：本地验收、公开模板发布与首版远端 CI 完成。
 
 ## 提炼范围
 
@@ -22,7 +22,13 @@
 | 窄屏、错误恢复、重复提交、减少动画 | 1440px/390px、正常/减少动画、故障注入与重试通过；已检查截图 |
 | 新项目初始化 | 干净目录初始化为 orbit-demo，冻结安装、完整 check 和浏览器 7/7 通过 |
 | 可选扩展开关 | 另一干净目录启用扩展，安装、扩展文件校验和模板检查通过 |
-| 公开内容检查与 GitHub template 设置 | 发布时确认 |
+| 公开内容检查与 GitHub template 设置 | 101 个源文件首次提交，未包含缓存/真实环境文件；public、is_template=true、main 已确认 |
+| GitHub Actions / Ubuntu | 首版完整检查与 Chromium 浏览器验收通过 |
+
+首版代码基线：`f53d405`。
+[公开仓库](https://github.com/kongshan33/project-starter)；
+[首版 CI 记录](https://github.com/kongshan33/project-starter/actions/runs/42234537142)。
+该记录证明此基线；后续版本的验证应查看对应提交的 CI。
 
 ## 维护事项
 

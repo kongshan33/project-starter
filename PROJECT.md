@@ -16,6 +16,9 @@
 重复安装、检查与浏览器验收通过。可选扩展已验证生成与文件结构。
 详细范围和远端状态由 [模板验收记录](design/docs/TEMPLATE_ACCEPTANCE.md) 维护。
 
+公开 [GitHub 模板仓库](https://github.com/kongshan33/project-starter) 已创建并推送；
+首版 Ubuntu CI 的完整检查与浏览器验收通过。后续提交以对应 CI 运行结果为准。
+
 ## 尚未接入
 
 真实身份、数据库、队列、AI 提供方、生产部署。模板示例不保存用户数据。
